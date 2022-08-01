@@ -6,7 +6,7 @@
     <!-- <span class="action-section"> 
       <img class="logo" @click="gotoLoginPage" src="@/assets/imgs/icon-back.png" alt="">
     </span> -->
-    <span class="title-section">视联医疗直播助手</span>
+    <span class="title-section">xxxx直播助手</span>
     
     <!-- <span class="help">
       

@@ -9,7 +9,7 @@ const scssCode = fs.readFileSync('./src/styles/mixin.scss', 'utf-8')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/obs-web-widgets/',
+  base: '/obs_ldap_login_test/',
   // base: '/',
   plugins: [vue()],
   resolve: {

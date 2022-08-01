@@ -37,8 +37,9 @@ export default defineComponent({
   color: #2c3e50;
   background-color: #E8F1FF;
   /* height: 100vh; */
-  width:1115px;
-  height:942px;
+  /* width:1115px; */
+  /* height:942px; */
+  width: 500px;
 }
 body {
     overflow: hidden;

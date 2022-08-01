@@ -1,5 +1,5 @@
 {
-  "name": "obs-web-widgets",
+  "name": "obs-ldap-widgets",
   "private": true,
   "version": "0.5.0",
   "scripts": {

@@ -2,18 +2,17 @@ import { loginToken } from '@/states'
 import { createRouter, createWebHistory,createWebHashHistory  } from 'vue-router'
 import Worker from '@/pages/Worker.vue'
 import Login from '@/pages/Login.vue'
-import Course from '@/pages/Course.vue'
 import Source from '@/pages/DemoSource.vue'
 import Layout from '@/layout/Main.vue'
 const routes = [
-    { 
-    path: '/', name: 'Course', component: Layout, 
-    children: [
-        { path: '/login', name: 'Login', component: Login },
-        { path: '/course', name: '课程列表', component: Course },
-    ]
-    },
+    // { 
+    // path: '/', name: 'Layout', component: Layout, 
+    // children: [
+    //     { path: '/login', name: 'Login', component: Login },
+    // ]
+    // },
 
+    { path: '/login', name: 'Login', component: Login },
     { path: '/source', name: 'Source', component: Source },
     { path: '/worker', name: 'Worker', component: Worker },
     
@@ -22,7 +21,7 @@ const routes = [
 
 const router = createRouter({
     // history: createWebHistory('/obs-web-widgets'),
-    history: createWebHashHistory('/obs-web-widgets'),
+    history: createWebHashHistory('/obs-ldap-widgets'),
     routes
 })
 
@@ -36,7 +35,7 @@ router.beforeEach((to, from, next) => {
     console.log('to.path',to.path)
     const token = loginToken.value
     if (!token) return next('/login')
-    if (to.path === '/') return next('/course') 
+    // if (to.path === '/') return next('/course') 
     next()
 })
 

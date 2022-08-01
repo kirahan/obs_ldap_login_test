@@ -2,14 +2,14 @@
   <div class="container">
     <div class="login-left">
       <div class="logo-group">
-        <span>欢迎使用直播助手</span>
+        <span>欢迎使用xxxx直播助手</span>
       </div>
       <div class="pw-group">
         <div class="input-group">
           <input
             v-model="account"
             class="inputarea"
-            placeholder="账号"
+            placeholder="域账号"
           />
         </div>
         <div class="input-group">
@@ -110,8 +110,8 @@ export default defineComponent({
 .container {
   // width: 1366px;
   // height: 1024px;
-  height:100%;
-  background: url(@/assets/bg2.jpg) no-repeat;
+  // height:100%;
+  // background: url(@/assets/bg2.jpg) no-repeat;
   background-size:cover;
   .login-left {
     @include flex(space-evenly, center, column);
